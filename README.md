@@ -1,2 +1,4 @@
-# Lifeband-OS-esp32-sleep-lib
-Library to enable synced and intelligent low-power sleep and wake-up on ESP32 and ESP32c3
+# Lifeband-vxOS-Nightcap
+Nightcap is a smart sleep and wake-up library for ESP32 and ESP32c3. Nightcap lets your device go to sleep when it's not being used, but can be awakened by events that arrive while it's sleeping.  So network connections, touch screens, capacitive buttons and other activities can stay instant-on. This enables you to make battery-powered devices that last a very long time between charges.
+
+The system will wake up at strictly defined (and scheduled) times, or can be externally triggered via button press or motion detection. A callback function is called at power-on - right at the beginning of setup(). In this callback you can then decide what needs to be done at that time (if anything at all). A message loop lets you queue up activities that need to be done later if immediate action isn't necessary. They are executed as soon as the device wakes up naturally next time after putting it back to sleep again.
